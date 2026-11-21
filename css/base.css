@@ -187,16 +187,12 @@ td {padding:5px 5px 5px 10px}
 .top-transparent.header-fullpage.fixed .navbar-brand img{height:50px;width:auto;object-fit:contain}
 @media (max-width:767.99px){.top-bar-right>.row{margin-left:0;margin-right:0}}@media (max-width:767.99px){.top-bar-right{font-size:13px}.top-bar-right span.mr-3{white-space:nowrap}}@media (max-width:767.99px){.top-bar-right{font-size:12px}.top-bar-right .mr-3{margin-right:.5rem}}@media (max-width:767.99px){.top-bar-right .col-md-auto{display:flex;flex-wrap:nowrap;justify-content:center;align-items:center}}
 
-/* MG round 40: user's own edited horizontal logo (1279x195, aspect 6.56) — wide lockup needs wide brand, modest heights */
-.top-transparent .navbar-brand{width:410px}
-.top-transparent .navbar-brand img{height:60px;width:auto;object-fit:contain}
-.top-transparent.header-fullpage.fixed .navbar-brand{width:370px}
-.top-transparent.header-fullpage.fixed .navbar-brand img{height:55px}
-@media (min-width:992px) and (max-width:1199.99px){
-.top-transparent .navbar-brand{width:335px}
-.top-transparent .navbar-brand img{height:50px}
-}
+/* MG round 41: shorter header, logo never shrinks on scroll */
+.top-transparent .navbar-brand{width:350px;padding:6px 0}
+.top-transparent .navbar-brand img{height:52px;width:auto;object-fit:contain}
+.top-transparent.header-fullpage.fixed .navbar-brand{width:350px;padding:6px 0}
+.top-transparent.header-fullpage.fixed .navbar-brand img{height:52px}
 @media (max-width:991.99px){
-.top-transparent .navbar-brand,.top-transparent.header-fullpage.fixed .navbar-brand{width:300px !important}
-.top-transparent .navbar-brand img,.top-transparent.header-fullpage.fixed .navbar-brand img{height:45px}
+.top-transparent .navbar-brand,.top-transparent.header-fullpage.fixed .navbar-brand{width:270px !important;padding:8px 0 !important}
+.top-transparent .navbar-brand img,.top-transparent.header-fullpage.fixed .navbar-brand img{height:40px}
 }
