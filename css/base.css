@@ -192,6 +192,8 @@ td {padding:5px 5px 5px 10px}
 .top-transparent .navbar-brand img{height:52px;width:auto;object-fit:contain}
 .top-transparent.header-fullpage.fixed .navbar-brand{width:350px;padding:6px 0}
 .top-transparent.header-fullpage.fixed .navbar-brand img{height:52px}
+.top-transparent .navbar-expand-lg .navbar-nav .nav-item{padding:0.7rem 0.19rem}
+.header-fullpage.fixed.navbar-expand-lg .navbar-nav .nav-item{padding-top:0.7rem}
 @media (max-width:991.99px){
 .top-transparent .navbar-brand,.top-transparent.header-fullpage.fixed .navbar-brand{width:270px !important;padding:8px 0 !important}
 .top-transparent .navbar-brand img,.top-transparent.header-fullpage.fixed .navbar-brand img{height:40px}
