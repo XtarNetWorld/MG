@@ -186,3 +186,13 @@ td {padding:5px 5px 5px 10px}
 .top-transparent .navbar-brand img{height:75px;width:auto;object-fit:contain}
 .top-transparent.header-fullpage.fixed .navbar-brand img{height:50px;width:auto;object-fit:contain}
 @media (max-width:767.99px){.top-bar-right>.row{margin-left:0;margin-right:0}}@media (max-width:767.99px){.top-bar-right{font-size:13px}.top-bar-right span.mr-3{white-space:nowrap}}@media (max-width:767.99px){.top-bar-right{font-size:12px}.top-bar-right .mr-3{margin-right:.5rem}}@media (max-width:767.99px){.top-bar-right .col-md-auto{display:flex;flex-wrap:nowrap;justify-content:center;align-items:center}}
+
+/* MG round 38: horizontal logo lockup — bigger, stays readable on scroll */
+.top-transparent .navbar-brand{width:410px}
+.top-transparent .navbar-brand img{height:80px;width:auto;object-fit:contain}
+.top-transparent.header-fullpage.fixed .navbar-brand{width:335px}
+.top-transparent.header-fullpage.fixed .navbar-brand img{height:65px}
+@media (max-width:991.99px){
+.top-transparent .navbar-brand,.top-transparent.header-fullpage.fixed .navbar-brand{width:285px !important}
+.top-transparent .navbar-brand img,.top-transparent.header-fullpage.fixed .navbar-brand img{height:55px}
+}
