@@ -222,12 +222,19 @@
     </section>
    
   
-  <section class=" bg-fixed  pos-rel" style="background:#e8edf1">
+  <style>
+@keyframes prgiSlide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.prgi-track{display:flex;width:max-content;animation:prgiSlide 32s linear infinite;will-change:transform}
+.prgi-marquee:hover .prgi-track{animation-play-state:paused}
+</style>
+<section class=" bg-fixed  pos-rel" style="background:#e8edf1">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12" style="text-align:center;padding:22px 15px">
-          <p style="margin:0;font-size:17px;font-weight:700;color:#133967;letter-spacing:.5px">PRGI : PRESS/2025/225/7408/00007971</p>
-          <p style="margin:6px 0 0;font-size:15px;line-height:1.6;color:#444">D101, Akurli Industrial Estate, Akurli Road, Kandivali East, Mumbai -400101.</p>
+        <div class="col-sm-12 prgi-marquee" style="overflow:hidden;padding:18px 0">
+          <div class="prgi-track">
+            <span style="display:flex;flex-shrink:0;white-space:nowrap;align-items:baseline"><span style="font-size:17px;font-weight:700;color:#133967;letter-spacing:.5px">PRGI : PRESS/2025/225/7408/00007971</span><span style="font-size:17px;color:#133967;padding:0 20px">&#8226;</span><span style="font-size:17px;color:#444">D101, Akurli Industrial Estate, Akurli Road, Kandivali East, Mumbai -400101.</span><span style="font-size:17px;color:#133967;padding:0 20px">&#8226;</span></span>
+            <span style="display:flex;flex-shrink:0;white-space:nowrap;align-items:baseline"><span style="font-size:17px;font-weight:700;color:#133967;letter-spacing:.5px">PRGI : PRESS/2025/225/7408/00007971</span><span style="font-size:17px;color:#133967;padding:0 20px">&#8226;</span><span style="font-size:17px;color:#444">D101, Akurli Industrial Estate, Akurli Road, Kandivali East, Mumbai -400101.</span><span style="font-size:17px;color:#133967;padding:0 20px">&#8226;</span></span>
+          </div>
         </div>
       </div>
     </div>
