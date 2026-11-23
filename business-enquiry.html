@@ -137,7 +137,7 @@
                
                 <!-- Heading Main -->
                 
-                <form  action="mailto:info@metrographics.co.in?subject=Contact%20Us%20-%20Metro%20Graphics" method="post" enctype="text/plain"  class="col rounded-field">
+                <form class="col rounded-field" id="contactForm">
                     <div class="form-row mb-4">
                       <div class="col">
                         <input type="text"name="firstname" id="firstname"  class="form-control" placeholder="Your Name" required>
@@ -164,7 +164,19 @@
 						<input type="submit" id="submit" name="submit" value="Send Message" class="form-btn mx-auto btn-theme bg-orange" />
                         <button style="display:none"  type="submit" class="form-btn mx-auto btn-theme bg-orange">Submit Now <i class="icofont-rounded-right"></i></button>
                     </div>
-                </form>                
+                </form>
+<script>
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var f = this;
+  var body = 'Name: ' + f.firstname.value + '\n' +
+    'Email: ' + f.email.value + '\n' +
+    'Phone: ' + f.contact.value + '\n' +
+    'City: ' + f.city.value + '\n\n' +
+    'Message:\n' + f.message.value;
+  window.location.href = 'mailto:info@metrographics.co.in?subject=' + encodeURIComponent('Contact Us - Metro Graphics') + '&body=' + encodeURIComponent(body);
+});
+</script>                
               </div>
           </div>
         </div>
