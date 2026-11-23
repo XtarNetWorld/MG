@@ -174,7 +174,10 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     'Phone: ' + f.contact.value + '\n' +
     'City: ' + f.city.value + '\n\n' +
     'Message:\n' + f.message.value;
-  window.location.href = 'mailto:info@metrographics.co.in?subject=' + encodeURIComponent('Contact Us - Metro Graphics') + '&body=' + encodeURIComponent(body);
+  var gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent('info@metrographics.co.in') +
+    '&su=' + encodeURIComponent('Contact Us - Metro Graphics') +
+    '&body=' + encodeURIComponent(body);
+  window.open(gmailUrl, '_blank');
 });
 </script>                
               </div>
